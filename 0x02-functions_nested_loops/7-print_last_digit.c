@@ -1,0 +1,17 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * print_last_digit - prints the last digit of a number
+ * @num: the number to find the last digit of
+ *
+ * Return: the value of the last digit
+ */
+int print_last_digit(int num)
+{
+    int last_digit = abs(num) % 10; /* use the absolute value of num to handle negative numbers */
+
+    printf("The last digit of %d is %d\n", num, last_digit);
+    return last_digit;
+}
