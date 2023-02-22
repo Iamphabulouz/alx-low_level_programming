@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+/* declaration for the add function */
+int add(int a, int b);
+
+/**
+ * main - entry point
+ *
+ * Return: always 0
+ */
+int main(void)
+{
+    int n;
+
+    /* call the add function */
+    n = add(89, 9);
+
+    /* print the result using printf */
+    printf("%d\n", n);
+
+    return (0);
+}
+
+/* implementation of the add function */
+int add(int a, int b)
+{
+    return (a + b);
+}
