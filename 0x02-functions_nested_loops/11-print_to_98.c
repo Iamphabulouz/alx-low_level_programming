@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * print_to_98 - prints all natural numbers from n to 98
@@ -18,9 +18,9 @@ void print_to_98(int n)
         for (i = n; i < 98; i++)
         {
             digit = i + '0';
-            putchar(digit);
-            putchar(comma);
-            putchar(space);
+            _putchar(digit);
+            _putchar(comma);
+            _putchar(space);
         }
     }
     else
@@ -28,12 +28,12 @@ void print_to_98(int n)
         for (i = n; i > 98; i--)
         {
             digit = i + '0';
-            putchar(digit);
-            putchar(comma);
-            putchar(space);
+            _putchar(digit);
+            _putchar(comma);
+            _putchar(space);
         }
     }
-    putchar('9');
-    putchar('8');
-    putchar('\n');
+    _putchar('9');
+    _putchar('8');
+    _putchar('\n');
 }
