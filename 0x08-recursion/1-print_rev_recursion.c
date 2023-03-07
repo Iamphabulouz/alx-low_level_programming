@@ -1,23 +1,21 @@
-#include <stdio.h>
+#include "holberton.h"
 
-void _print_rev_recursion(char *s);
-
-int main2(void)
-{
-    char str[] = "Hello, world!";
-    _print_rev_recursion(str);
-    return 0;
-}
-
+/**
+ * _print_rev_recursion - prints a string in reverse recursively.
+ * @s: pointer to the string to be printed.
+ *
+ * Return: void.
+ */
 void _print_rev_recursion(char *s)
 {
-    if (*s == '\0')
-    {
-        return;
-    }
-    else
-    {
-        _print_rev_recursion(s + 1);
-        putchar(*s);
-    }
+	if (*s == '\0')
+	{
+		return;
+	}
+	else
+	{
+		_print_rev_recursion(s + 1);
+		_putchar(*s);
+	}
 }
+
