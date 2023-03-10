@@ -1,0 +1,7 @@
+Static libraries are a type of library in computer programming that contains precompiled object code, which can be linked into a program at compile time. When a static library is linked into a program, the object code contained in the library becomes part of the program itself.
+
+Static libraries are called "static" because the object code they contain is copied into the final executable file of the program, making it a self-contained entity that does not require any additional libraries or files to run. This means that the program will be able to run on any machine that has the necessary operating system and hardware architecture, without requiring any additional dependencies.
+
+Static libraries are often used in situations where the program is relatively small and self-contained, and where the size of the library is not a concern. They are also useful in embedded systems and other situations where resources are limited and dynamic linking is not feasible or desirable.
+
+Static libraries are created by archiving object files (.o files) using a tool such as ar (Unix archive), and are typically given the file extension .a on Unix systems, and .lib on Windows systems. They can be linked into a program using a linker, such as ld (Unix linker) or the Microsoft Visual C++ linker.
