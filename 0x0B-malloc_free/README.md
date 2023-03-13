@@ -1,0 +1,24 @@
+malloc is a standard library function in the C programming language (and some other languages) that stands for "memory allocation". It is used to dynamically allocate a block of memory of a specified size, which can then be used by the program to store data or other information.
+
+When you call malloc, it requests a certain amount of memory from the computer's heap, which is a region of memory that is managed by the operating system. The size of the block of memory that malloc allocates is specified in bytes, and the function returns a pointer to the beginning of this block.
+
+The programmer can then use this pointer to access the block of memory, and store or retrieve data from it. When the program is done with the memory, it should call the free function to release the memory back to the heap and avoid memory leaks.
+
+For example, here is a simple C program that uses malloc to allocate memory for an integer variable:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int *p = malloc(sizeof(int));
+    *p = 42;
+    printf("The value of p is %d\n", *p);
+    free(p);
+    return 0;
+}
+In this program, malloc(sizeof(int)) requests enough memory to hold one integer variable. The resulting pointer is stored in the variable p, and the integer value 42 is stored at the memory location pointed to by p. Finally, the free(p) function is called to release the memory back to the heap.
+
+
+
+
+
